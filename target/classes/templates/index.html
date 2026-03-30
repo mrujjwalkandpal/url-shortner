@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <title>URL SHORTNER</title>
+</head>
+
+<body>
+  <div class="m">
+    <div class="mainBody">
+      <h1>
+        <span class="left">URL</span>
+        <span class="right">SHORTNER</span>
+      </h1>
+
+      <!-- 🔹 FORM -->
+      <form class="form" id="urlForm">
+        <input
+          class="form-type"
+          type="url"
+          id="urlInput"
+          placeholder="Enter Long Url"
+          required
+        />
+        <button class="form-btn" type="submit">Make it Short</button>
+      </form>
+    </div>
+
+    <!-- 🔹 RESULT -->
+    <div id="result" style="display:none;">
+      <p>Short Url :</p>
+      <a id="shortLink" target="_blank"></a>
+
+      <p id="clickCount"></p>
+    </div>
+  </div>
+
+  <!-- 🔥 JS -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
